@@ -1,0 +1,38 @@
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static "css/header.css" %}" type="text/css" />
+    <link rel="stylesheet" href="{% static "css/main.css" %}" type="text/css" />
+{% endblock %}
+{%block div%}
+    <div class="header">
+        <div class="container">
+            <div class="header_content" >
+                 <div class="logo">
+                     <a href="{% url "home" %}"><img src="{% static 'images/armcoders.png' %}" alt="My image"></a>
+                     <a style="text-decoration: none" href="{% url "home" %}">
+                         <div class="logo_text">
+                            <h2>ArmCoders</h2>
+                            <p>Միայն Ծրագրավորողների համար</p>
+                        </div>
+                     </a>
+                </div>
+                  <div >
+                    <ul>
+                        <li><a href="{% url "newsPost" %}">Նորություններ</a></li>
+                        <li><a href="{% url "topPost" %}">Թոփ-100</a></li>
+                        <li><a href="">Մեր Տելեգրամը</a></li>
+                    </ul>
+                </div>
+
+                <div class="input">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{ context.form1 }}
+                        <input class="input_btn" type="hidden" value="Ավելացնել">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{%endblock%}

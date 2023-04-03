@@ -1,0 +1,19 @@
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static "css/footer.css" %}" type="text/css" />
+{% endblock %}
+{% block div %}
+    <div class="foot">
+        <div class="logo">
+            <img src="{% static 'images/armcoders.png' %}" alt="">
+            <div>
+                <h2>ArmCoders</h2>
+                <p>Միայն ծրագծավորողների համար</p>
+            </div>
+        </div>
+        <p class="foot_text">
+            Այս վեբ կայքը պատրաստված է սկսնակ և փորձառու ծրագրավորողների համար։Այստեղ դուք
+            կգտնեք օգտակար հավելվածներ, դիզայններ,պատրաստի որոշումներ և վիդեոդասեր։
+        </p>
+    </div>
+{% endblock %}

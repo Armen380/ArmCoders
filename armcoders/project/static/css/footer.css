@@ -1,0 +1,30 @@
+.foot{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2326;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h2{
+  background: -webkit-linear-gradient(#6950DC, #22C6F3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo p{
+    background: -webkit-linear-gradient(#6950DC, #22C6F3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.foot_text{
+    max-width: 300px;
+    color: #6a7073;
+    font-size: 15px;
+    margin-top: 20px;
+}

@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+}
+.home{
+    margin: 0 auto;
+    width: 900px;
+}
+.about_img{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    width: 900px;
+    height: 450px;
+}
+
+
+.detail_about_text{
+    margin-top: 20px;
+}
+.detail_about_text p{
+    color: white;
+}
+
+.download{
+    display: flex;
+    flex-direction:column ;
+
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+}
+
+.download_header{
+    background-color: #54cb29;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.download_header p{
+    margin-left: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.download_body{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download_body_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393C3F;
+    height: 50px;
+    width: 250px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.download_body_btn a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.download_body_btn img{
+    width: 40px;
+    height: 40px;
+
+}
+.download_body_btn p{
+    margin-left: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.nameFormInput{
+    width: 210px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #393C3F;
+
+}
+.comment{
+    display: flex;
+    flex-direction:column ;
+}
+
+.comment_header{
+    background-color: #4e36c2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.comment_header p{
+    margin-left: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.comment_body{
+    background-color: black;
+    height: 270px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:30px;
+}
+
+.commentFormInput{
+    width: 500px;
+    height: 130px;
+    border-radius: 8px;
+    background-color: #1F2326;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.input_btn{
+    background-color: #3D3AD8;
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    position: relative;
+    left: 650px;
+    bottom: 15px;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+.input_btn:hover{
+    cursor: pointer;
+    background-color: #000000;
+    color: #3D3AD8;
+    transition: 0.4s;
+    border:2px solid #3D3AD8;
+}
+
+.errorlist{
+    display:none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .home{
+        width: 700px;
+    }
+
+    .input_btn{
+        left: 500px;
+    }
+    .commentFormInput{
+        width: 400px;
+    }
+    .
+    .img{
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .home{
+        width: 600px;
+    }
+
+    .input_btn{
+        left: 400px;
+    }
+    .commentFormInput{
+        width: 350px;
+    }
+        .img{
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .home{
+        width: 450px;
+    }
+
+    .input_btn{
+        left: 250px;
+        top: 10px;
+    }
+    .nameFormInput{
+        width: 150px;
+        height: 30px;
+    }
+    .commentFormInput{
+        width: 250px;
+        height: 80px;
+    }
+    .img{
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home{
+        width: 330px;
+    }
+
+    .input_btn{
+        left: 180px;
+        top: 10px;
+        width: 100px;
+        height: 30px;
+    }
+    .nameFormInput{
+        width: 150px;
+        height: 30px;
+    }
+    .commentFormInput{
+        width: 250px;
+        height: 80px;
+    }
+    .img{
+        width: 300px;
+        height: 200px;
+    }
+}
